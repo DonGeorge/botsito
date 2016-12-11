@@ -11,6 +11,8 @@ bot.dialog('/', function (session) {
     session.send(JSON.stringify(session.message.address));
 });
 
+// more stuff
+
 // Setup Restify Server
 var server = restify.createServer();
 server.post('/api/messages', connector.listen());
