@@ -8,7 +8,7 @@ var connector = new builder.ChatConnector({
 });
 var bot = new builder.UniversalBot(connector);  
 bot.dialog('/', function (session) {
-    session.send('Hello World');
+    session.send(JSON.stringify(session.message.address));
 });
 
 // Setup Restify Server
